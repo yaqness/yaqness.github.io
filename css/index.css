@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background: url(../img/pattern.png), linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
+.itd-xl {
+    padding-top: 150px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+    font-size: 2.47rem;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(37, 37, 37);
+    margin: 30px auto;
+    transition: 0.5s all;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.circle:hover .triangle {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.triangle {
+    margin-top: 15px;
+    margin-left: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 0 14px 28px;
+    border-color: transparent transparent transparent #bbbbbb;
+}
+
+.about-text {
+    background: linear-gradient(90deg, #72ace9, #5558b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    padding-top: 90px;
+}
+
+.about-text2 {
+    color: #ffffff;
+    padding-top: 30px;
+    margin: 0 140px 0 140px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.about-text3 {
+    color: #ffffff;
+    padding-top: 10px;
+    margin: 0 20px 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #72ace9, #5558b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+.central {
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/cosmo.jpeg);
+}
+
+h6::selection,
+h3::selection,
+h2::selection,
+h1::selection,
+h4::selection,
+h5::selection {
+    background-color: #ffc7e3;
+    color: #000;
+}
+
+.yag-phone {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 250px;
+    width: 90%;
+    background: #191919;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+    top: -250px;
+    z-index: -1;
+}
+
+.yag-phone::before {
+    content: '';
+    width: 200px;
+    height: 1400px;
+    left: 500px;
+    top: -570px;
+    position: absolute;
+    background: linear-gradient(#00e5ff, #b400fb);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.yag-phone::after {
+    content: '';
+    position: absolute;
+    background: #191919;
+    inset: 3px;
+    border-radius: 5px;
+}
+
+.xs-version {
+    top: -320px !important;
+    height: 300px !important;
+}
+
+.xs-version::before {
+    width: 100px;
+    height: 700px;
+    left: 160px;
+    top: -230px;
+    position: absolute;
+}
+
+.lg-version {
+    top: -260px !important;
+}
+
+.md-version {
+    top: -300px !important;
+    height: 300px !important;
+}
+
+.sm-version {
+    height: 400px !important;
+    top: -550px !important;
+}
+
+.functions-text {
+    position: relative;
+    top: -150px;
+    background: linear-gradient(90deg, #72ace9, #5558b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.itd-circle-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px #5558b6 solid;
+    margin: 10px auto;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-itd {
+    transform: scale(1.5);
+}
+
+.link {
+    width: 100%;
+    height: 400px;
+}
+
+.link-text {
+    background: linear-gradient(90deg, #72ace9, #5558b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.tgg {
+    position: relative;
+    top: 50px;
+}
